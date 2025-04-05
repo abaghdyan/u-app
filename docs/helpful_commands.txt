@@ -1,0 +1,4 @@
+// Docker-related
+Run services: from "docs\containerization\services" -> docker-compose up
+Build docker: from root -> docker build -t vista-los-app -f src/Application.Api/Dockerfile .
+Run docker: from everywhere -> docker run -d -t -i -e ASPNETCORE_ENVIRONMENT='Docker' -p 5110:80 --name VistaLOS-App vista-los-app

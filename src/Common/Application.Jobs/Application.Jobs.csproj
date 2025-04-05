@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<AssemblyName>VistaLOS.$(MSBuildProjectName)</AssemblyName>
+		<RootNamespace>VistaLOS.$(MSBuildProjectName.Replace(" ", "_"))</RootNamespace>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Hangfire.AspNetCore" Version="1.7.36" />
+		<PackageReference Include="Hangfire.Console" Version="1.4.2" />
+		<PackageReference Include="Hangfire.Core" Version="1.7.36" />
+		<PackageReference Include="Hangfire.SqlServer" Version="1.7.36" />
+		<PackageReference Include="OpenTelemetry.Instrumentation.Hangfire" Version="1.6.0-beta.1" />
+		<PackageReference Include="System.Diagnostics.DiagnosticSource" Version="8.0.0" />
+		<Using Remove="Microsoft.Extensions.Logging" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\Application.Common\Application.Common.csproj" />
+	  <ProjectReference Include="..\Application.Data.Common\Application.Data.Common.csproj" />
+	</ItemGroup>
+
+</Project>

@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  sql-server-db:
+    container_name: "VistaLOS-MS-SQL"
+    image: "mcr.microsoft.com/mssql/server"
+    environment:
+      SA_PASSWORD: "P@ssw0rd"
+      ACCEPT_EULA: "Y"
+    ports:
+    - "1433:1433"
+    privileged: true
+  redis:
+    container_name: "VistaLOS-Redis"
+    image: "redis:latest"
+    ports:
+    - "6379:6379"

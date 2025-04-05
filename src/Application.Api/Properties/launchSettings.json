@@ -1,0 +1,15 @@
+{
+  "profiles": {
+    "Application.Api": {
+      "commandName": "Project",
+      "launchBrowser": false,
+      "launchUrl": "swagger",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Local"
+        //"ASPNETCORE_ENVIRONMENT": "Docker"
+      },
+      "dotnetRunMessages": true,
+      "applicationUrl": "https://localhost:7100;http://localhost:7110"
+    }
+  }
+}

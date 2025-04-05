@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+		<AssemblyName>VistaLOS.$(MSBuildProjectName)</AssemblyName>
+		<RootNamespace>VistaLOS.$(MSBuildProjectName.Replace(" ", "_"))</RootNamespace>
+	</PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Application.Identity.Data\Application.Identity.Data.csproj" />
+  </ItemGroup>
+
+</Project>
